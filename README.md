@@ -1,6 +1,6 @@
 # COMPLAC — Compilador da linguagem SLAC²
 
-**Autores:** Thomaz de Souza Scopel (RA 10417183) · Matteo Porcare (RA 10417286)
+**Autores:** Thomaz de Souza Scopel (RA 10417183) · Matteo Porcare (RA 10418276)
 
 Fase 1: análise léxica, análise sintática (ASDR) e Tabela de Símbolos.
 
