@@ -1,0 +1,4 @@
+proc main()
+start
+   echo("sem fim);
+end

@@ -1,0 +1,5 @@
+proc main()
+locvars
+   x, y, x is int;
+start
+end

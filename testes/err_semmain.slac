@@ -1,0 +1,4 @@
+func f(): int
+start
+   return 1;
+end

@@ -1,0 +1,17 @@
+proc main()
+locvars
+   A1, R, n, i, soma, termo is int;
+start
+   echo("Primeiro termo (A1):"); get(A1);
+   echo("Razão (R):");           get(R);
+   echo("Qtde de termos (n):");  get(n);
+   soma << 0;
+   for i from 1 to n do
+      termo << A1 + (i - 1) * R;
+      soma << soma + termo;
+   end;
+   for i from 10 to 1 by -1 do
+      echo(i);
+   end;
+   echo("Somatório dos ", n, " primeiros termos da PA: ", soma);
+end

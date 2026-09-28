@@ -1,0 +1,14 @@
+proc main()
+locvars
+   cod is int;
+start
+   echo("Digite o código do chamado:");
+   get(cod);
+   choose (cod)
+      match 0        -> echo("Teste: nenhuma ação necessária.");
+      match 9999     -> echo("Encerrar sistema de triagem.");
+      match 1, 2, 3  -> echo("URGENTE: acionar equipe de resgate.");
+      match 10,11,12 -> echo("Prior. Alta: encaminhar ao n2.");
+      others         -> echo("Código inválido ou desconhecido.");
+   end;
+end

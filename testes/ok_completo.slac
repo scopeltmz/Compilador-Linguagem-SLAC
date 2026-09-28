@@ -1,0 +1,43 @@
+/# Programa de teste abrangente:
+   globais, vetores, ref, blocos, repeat, while #/
+globvars
+   total, v is int;
+   nome is chr[20];
+   ok is logic;
+
+proc zera(ref x: int, vet: int[10])
+locvars
+   i is int;
+start
+   x << 0;
+   for i from 1 to 10 do
+      vet[i] << -i * 2 // 3;
+   end;
+end
+
+func maior(a: int, b: int): logic
+start
+   return a > b & ~(a = b) | a >= -b;
+end
+
+proc main()
+locvars
+   k, lista is int;
+   c is chr;
+start
+   c << 'x';
+   k << 0;
+   zera(k, lista);
+   repeat
+      k << k + 1;
+      get(nome[k]);
+   until (k >= 5);
+   while (maior(k, 0) & ~ok) do
+      start
+         k << k - 1;
+      end;
+   end;
+   case (k <= 0)
+   end;
+   echo("fim", c, total);
+end

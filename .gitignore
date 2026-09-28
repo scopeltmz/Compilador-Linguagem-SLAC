@@ -1,0 +1,7 @@
+# artefatos de compilação e logs do COMPLAC
+build/
+complac
+complac.exe
+*.tk
+*.ts
+*.trc
